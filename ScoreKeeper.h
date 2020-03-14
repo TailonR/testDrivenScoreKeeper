@@ -17,6 +17,13 @@ public:
 
 private:
 	std::string _score;
+	void setScore();
+	int scoreDigitA1 = 0;
+	int scoreDigitA2 = 0;
+	int scoreDigitA3 = 0;
+	int scoreDigitB1 = 0;
+	int scoreDigitB2 = 0;
+	int scoreDigitB3 = 0;
 };
 
 #endif // !SCOREKEEPER_H
