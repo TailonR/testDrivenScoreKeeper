@@ -10,7 +10,12 @@ void ScoreKeeper::scoreTeamA1()
 	setScore();
 }
 
-void ScoreKeeper::scoreTeamA2() {}
+void ScoreKeeper::scoreTeamA2() 
+{
+	scoreDigitA3 += 2;
+
+	setScore();
+}
 
 void ScoreKeeper::scoreTeamA3() {}
 
@@ -21,7 +26,12 @@ void ScoreKeeper::scoreTeamB1()
 	setScore();
 } 
 
-void ScoreKeeper::scoreTeamB2() {}
+void ScoreKeeper::scoreTeamB2() 
+{
+	scoreDigitB3 += 2;
+
+	setScore();
+}
 
 void ScoreKeeper::scoreTeamB3() {}
 
