@@ -45,3 +45,22 @@ TEST_CASE("Teams scored 2 points")
 	mark.scoreTeamB2();
 	CHECK(mark.getScore() == "006:006");
 }
+
+TEST_CASE("Teams scored 3 points")
+{
+	ScoreKeeper mark;
+	mark.scoreTeamB3();
+	CHECK(mark.getScore() == "000:003");
+	mark.scoreTeamA3();
+	CHECK(mark.getScore() == "003:003");
+
+	mark.scoreTeamB3();
+	CHECK(mark.getScore() == "003:006");
+	mark.scoreTeamA3();
+	CHECK(mark.getScore() == "006:006");
+
+	mark.scoreTeamA3();
+	CHECK(mark.getScore() == "009:006");
+	mark.scoreTeamB3();
+	CHECK(mark.getScore() == "009:009");
+}
